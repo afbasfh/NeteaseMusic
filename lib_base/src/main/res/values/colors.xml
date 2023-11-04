@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_black">#1B1B25</color>
+    <color name="primary_red">#F12A26</color>
+    <color name="dark_red">#5F242B</color>
+    <color name="light_black">#24242D</color>
+    <color name="alpha_light_black">#9924242D</color>
+    <color name="text_light_white">#E8E8EA</color>
+    <color name="light_blue">#507AAC</color>
+    <color name="gray">#6E6E77</color>
+
+    <color name="bottom_view_bg">#1F1E23</color>
+    <color name="text_light_gray">#8F8E93</color>
+
+    <color name="top_gradient_start">#1C1934</color>
+    <color name="top_gradient_center">#231A35</color>
+    <color name="top_gradient_end">#2B192F</color>
+
+    <color name="search_gradient_start">#222047</color>
+    <color name="search_gradient_center">#2F2145</color>
+    <color name="search_gradient_end">#382239</color>
+
+    <color name="dialog_bg">#2D2D38</color>
+    <color name="drawer_bg">#151515</color>
+    <color name="drawer_item_bg">#202020</color>
+</resources>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MusicPlayerActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/auido_bg" />
+
+    <TextView
+        android:id="@+id/timeStartView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="00:00"
+        android:textColor="@color/text_light_white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressView" />
+
+    <TextView
+        android:id="@+id/timeEndView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="00:00"
+        android:textColor="@color/text_light_white"
+        app:layout_constraintBottom_toBottomOf="@+id/progressView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressView" />
+
+    <com.example.lib_audio.activity.MusicProgressBarView
+        android:id="@+id/progressView"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/timeEndView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/timeStartView" />
+
+    <ImageView
+        android:id="@+id/playView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/nextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/previousView"
+        app:layout_constraintTop_toBottomOf="@+id/progressView"
+        app:srcCompat="@drawable/audio_play" />
+
+    <ImageView
+        android:id="@+id/nextView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playView"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/playListView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playView"
+        app:layout_constraintTop_toTopOf="@+id/playView"
+        app:srcCompat="@drawable/audio_next" />
+
+    <ImageView
+        android:id="@+id/playListView"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextView"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/timeEndView"
+        app:layout_constraintStart_toEndOf="@+id/nextView"
+        app:layout_constraintTop_toTopOf="@+id/nextView"
+        app:srcCompat="@drawable/audio_play_list" />
+
+    <ImageView
+        android:id="@+id/previousView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playView"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/playView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/modeView"
+        app:layout_constraintTop_toTopOf="@+id/playView"
+        app:srcCompat="@drawable/audio_previous" />
+
+    <ImageView
+        android:id="@+id/modeView"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/previousView"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/previousView"
+        app:layout_constraintStart_toStartOf="@+id/timeStartView"
+        app:layout_constraintTop_toTopOf="@+id/previousView"
+        app:srcCompat="@drawable/audio_mode_list_cycle" />
+
+    <ImageView
+        android:id="@+id/favoriteView"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressView"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/downView"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/modeView"
+        app:srcCompat="@drawable/audio_love" />
+
+    <ImageView
+        android:id="@+id/downView"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/favoriteView"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/singView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/favoriteView"
+        app:layout_constraintTop_toTopOf="@+id/favoriteView"
+        app:srcCompat="@drawable/audio_down" />
+
+    <ImageView
+        android:id="@+id/singView"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/downView"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/commentView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/downView"
+        app:layout_constraintTop_toTopOf="@+id/downView"
+        app:srcCompat="@drawable/audio_sing" />
+
+    <ImageView
+        android:id="@+id/moreView"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commentView"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/playListView"
+        app:layout_constraintStart_toEndOf="@+id/commentView"
+        app:layout_constraintTop_toTopOf="@+id/commentView"
+        app:srcCompat="@drawable/audio_more" />
+
+    <ImageView
+        android:id="@+id/commentView"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/singView"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/moreView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/singView"
+        app:layout_constraintTop_toTopOf="@+id/singView"
+        app:srcCompat="@drawable/audio_commet" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        app:srcCompat="@drawable/play_back" />
+
+    <ImageView
+        android:id="@+id/indicatorView"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:srcCompat="@drawable/play_tap" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5
+" />
+
+    <ImageView
+        android:id="@+id/albumView"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/play_album" />
+
+    <ImageView
+        android:id="@+id/closeView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/authorView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleView"
+        app:srcCompat="@drawable/arrow_down" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="68dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/closeView"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/authorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="TextView"
+        android:textColor="#807F7F"
+        app:layout_constraintEnd_toEndOf="@+id/titleView"
+        app:layout_constraintStart_toStartOf="@+id/titleView"
+        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

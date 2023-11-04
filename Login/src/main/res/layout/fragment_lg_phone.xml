@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.login.LgLoginViewModel" />
+        <variable
+            name="clickevents"
+            type="com.example.login.LgClickEvents" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_black"
+        tools:context=".phone.LgPhoneFragment">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/corner_round_shape"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@null"
+            android:hint="@string/login_phone_text"
+            android:text="@{viewmodel.phoneNumber}"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:textColor="@color/text_light_white"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@drawable/cusor_shape_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_delete"
+            android:background="@drawable/delete_circle_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            android:onClick="@{(view)->clickevents.clearPhone(view,viewmodel)}"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/login"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/text_light_white"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            android:onClick="@{(view)->clickevents.login(view,viewmodel)}"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            android:background="@drawable/login_round_rect_shape"/>
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_check"
+            initSrc="@{viewmodel.isChecked()}"
+            android:onClick="@{(view)->clickevents.changeSelectState(view,viewmodel)}"
+            android:background="@drawable/delete_circle_shape"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="12dp"
+            android:layout_marginStart="10dp"
+            swing="@{viewmodel.agreementShouldSwing}"
+            IgViewModel="@{viewmodel}"
+            htmlText="@{@string/login_agreement}"
+            android:text="@string/login_agreement"
+            app:layout_constraintBottom_toBottomOf="@+id/check"
+            app:layout_constraintStart_toEndOf="@+id/check"
+            app:layout_constraintTop_toTopOf="@+id/check" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

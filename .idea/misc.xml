@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/back_corner_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/corner_round_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/cusor_shape_blue.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/delete_circle_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/ic_check.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/ic_delete.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/loading_corner_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/login_alert_rect_shapr.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/login_btn_selector.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/login_round_rect_shape.unable.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/login_round_rect_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/login_round_rect_unable_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/drawable/password_text_border_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/layout/activity_login.xml" value="0.358695652173913" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/layout/fragment_lg_password.xml" value="0.358695652173913" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/layout/fragment_lg_phone.xml" value="0.33" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/layout/fragment_lg_verify.xml" value="0.358695652173913" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/layout/layout_login_alert.xml" value="0.358695652173913" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/layout/layout_login_normal_alert.xml" value="0.358695652173913" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/Login/src/main/res/layout/loading_layout.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/drawable/jump_textview_shape.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/activity_welcome.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/fragment_advertise.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/fragment_advertisement.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/fragment_circle.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/fragment_home.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/fragment_me.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/fragment_welcome.xml" value="0.34739583333333335" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/layout_bottombar_top_line.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/layout_labber_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/app/src/main/res/layout/layout_music_item.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/lib_audio/src/main/res/drawable/bottom_bar_gredient_bg_color.xml" value="0.236" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/lib_audio/src/main/res/layout/activity_music_play.xml" value="0.1" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/lib_audio/src/main/res/layout/activity_music_player.xml" value="0.34739583333333335" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/lib_audio/src/main/res/layout/layout_notification_collpase.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/lib_audio/src/main/res/layout/layout_notification_expanded.xml" value="0.3482789855072464" />
+        <entry key="..\:/androidstudioproject/testdemo/NeteaseMusic/lib_audio/src/main/res/layout/music_bottom_view.xml" value="0.29615384615384616" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.358695652173913" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

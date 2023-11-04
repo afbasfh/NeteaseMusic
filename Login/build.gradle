@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+
+    buildFeatures{
+        dataBinding true
+        viewBinding true
+    }
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'io.github.bmob:android-sdk:3.9.4'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.1")
+    implementation "androidx.activity:activity-ktx:1.2.0"//新添加
+    implementation "androidx.fragment:fragment-ktx:1.3.0"
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'//我的文件已有的
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+
+//    富文本
+    implementation("org.sufficientlysecure:html-textview:4.0")
+
+    implementation(project(":lib_base"))
+    implementation(project(":lib_common_ui"))
+
+
+    // Java language implementation
+    implementation("androidx.navigation:navigation-fragment:2.5.3")
+    implementation("androidx.navigation:navigation-ui:2.5.3")
+
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+
+    // Feature module Support
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:2.5.3")
+
+    // Testing Navigation
+    androidTestImplementation("androidx.navigation:navigation-testing:2.5.3")
+
+    // Jetpack Compose Integration
+    implementation("androidx.navigation:navigation-compose:2.5.3")
+
+}

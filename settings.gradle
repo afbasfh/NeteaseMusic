@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+rootProject.name = "NeteaseMusic"
+include ':app'
+include ':Login'
+include ':lib_base'
+include ':lib_common_ui'
+include ':lib_audio'

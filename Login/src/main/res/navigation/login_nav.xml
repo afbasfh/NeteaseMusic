@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/lgPhoneFragment">
+
+    <fragment
+        android:id="@+id/lgPhoneFragment"
+        android:name="com.example.login.phone.LgPhoneFragment"
+        android:label="LgPhoneFragment" >
+        <action
+            android:id="@+id/action_lgPhoneFragment_to_lgVerifyFragment"
+            app:destination="@id/lgVerifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lgPasswordFragment"
+        android:name="com.example.login.password.LgPasswordFragment"
+        android:label="fragment_lg_password"
+        tools:layout="@layout/fragment_lg_password" />
+    <fragment
+        android:id="@+id/lgVerifyFragment"
+        android:name="com.example.login.verify.LgVerifyFragment"
+        android:label="LgVerifyFragment" >
+        <action
+            android:id="@+id/action_lgVerifyFragment_to_lgPasswordFragment"
+            app:destination="@id/lgPasswordFragment" />
+        <action
+            android:id="@+id/action_lgVerifyFragment_to_lgPhoneFragment"
+            app:destination="@id/lgPhoneFragment"
+            app:popUpTo="@id/lgVerifyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
